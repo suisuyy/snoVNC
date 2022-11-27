@@ -1,3 +1,21 @@
+# novnc with sound
+use code from 
+https://coredump.ws/index.php?dir=code&post=NoVNC_with_audio
+
+defect : audio about 1 second lantency
+
+# quick start
+just run 
+```
+bash start_snovnc.sh 
+
+```
+ to start vncserver ,audioserver ,websocketfy easyly
+
+ 
+
+
+# noVNC README
 ## noVNC: HTML VNC Client Library and Application
 
 [![Test Status](https://github.com/novnc/noVNC/workflows/Test/badge.svg)](https://github.com/novnc/noVNC/actions?query=workflow%3ATest)
@@ -19,15 +37,23 @@ for a more complete list with additional info and links.
 
 ### Table of Contents
 
-- [News/help/contact](#newshelpcontact)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Browser Requirements](#browser-requirements)
-- [Server Requirements](#server-requirements)
-- [Quick Start](#quick-start)
-- [Installation from Snap Package](#installation-from-snap-package)
-- [Integration and Deployment](#integration-and-deployment)
-- [Authors/Contributors](#authorscontributors)
+- [novnc with sound](#novnc-with-sound)
+- [quick start](#quick-start)
+- [noVNC README](#novnc-readme)
+  - [noVNC: HTML VNC Client Library and Application](#novnc-html-vnc-client-library-and-application)
+    - [Description](#description)
+    - [Table of Contents](#table-of-contents)
+    - [News/help/contact](#newshelpcontact)
+    - [Features](#features)
+    - [Screenshots](#screenshots)
+    - [Browser Requirements](#browser-requirements)
+    - [Server Requirements](#server-requirements)
+    - [Quick Start](#quick-start-1)
+    - [Installation from Snap Package](#installation-from-snap-package)
+      - [Running noVNC from Snap Directly](#running-novnc-from-snap-directly)
+      - [Running noVNC from Snap as a Service (Daemon)](#running-novnc-from-snap-as-a-service-daemon)
+    - [Integration and Deployment](#integration-and-deployment)
+    - [Authors/Contributors](#authorscontributors)
 
 ### News/help/contact
 

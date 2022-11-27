@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>audio test</title>
+</head>
+
+<body>
+      <button id="startaudioButton">click to start audio</button>
+
+      <script type="module">
+            import WebAudio from './webaudio.js';
+
+            const AUDIO_SERVER = window.location.hostname + ':8080';
+
+            let audioapp = {};
+            audioapp.protocol = (window.location.protocol === 'https:' ? 'wss' : 'ws');
+            // audioapp.audio = new WebAudio(audioapp.protocol + `://${AUDIO_SERVER}/websockify`);
+            audioapp.audio = new WebAudio('ws' + `://${AUDIO_SERVER}`);
+
+
+            document.body.style.height = '100vh'
+            document.body.addEventListener('click', () => {
+                  console.log('try start webaudio')
+                  audioapp.audio.start();
+
+            })
+
+      </script>
+</body>
+
+</html>
