@@ -2,15 +2,19 @@
 use code from 
 https://coredump.ws/index.php?dir=code&post=NoVNC_with_audio
 
-defect : audio about 1 second lantency
+defect : audio about 1 second lantency;only test on ubuntu 2204
 
 # quick start
 just run 
 ```
-bash start_snovnc.sh 
+bash start_snovnc.sh   #look this file for more detail
 
 ```
  to start vncserver ,audioserver ,websocketfy easyly
+ 
+ then open
+ 
+ http://yourcomputerip:8081/snovnc.html?port=5800
 
  
 
